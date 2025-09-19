@@ -383,8 +383,7 @@ added: v0.1.23
 * `path` {string}
 * Returns: {string}
 
-The `path.normalize()` method normalizes the given `path`, resolving `'..'` and
-`'.'` segments.
+The `path.normalize()` method normalizes the given `path`, removing redundant `'.'` segments and simplifying `'..'` segments where possible.
 
 When multiple, sequential path segment separation characters are found (e.g.
 `/` on POSIX and either `\` or `/` on Windows), they are replaced by a single
